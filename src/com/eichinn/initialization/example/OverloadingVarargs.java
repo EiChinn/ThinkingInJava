@@ -31,10 +31,10 @@ public class OverloadingVarargs {
 
     public static void main(String[] args) {
         f('a', 'b', 'c');
-        f(1);
+//        f(1);
         f(2, 1);
-        f(0);
-        f(0L);
+//        f(0);
+//        f(0L);
 //        f();//Won't compile -- ambiguous
 
     }
