@@ -9,10 +9,8 @@ public class PolyConstructors {
     }
 }
 
-class Glyph {
-    void draw() {
-        System.out.println("Glyph.draw()");
-    }
+abstract class Glyph {
+    abstract void draw();
 
     Glyph() {
         System.out.println("Glyph() before draw");
