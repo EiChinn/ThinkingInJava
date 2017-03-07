@@ -23,7 +23,7 @@ class Pet implements Comparable<Pet>{
 
     @Override
     public int compareTo(Pet o) {
-        return this.getClass().getSimpleName().compareTo(o.getClass().getCanonicalName());
+        return this.getClass().getSimpleName().compareTo(o.getClass().getSimpleName());
     }
 }
 

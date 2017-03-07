@@ -7,9 +7,9 @@ import java.util.*;
  */
 public class ListFeatures {
     public static void main(String[] args) {
-//        testObject();
+        testObject();
 //        testInteger();
-        testString();
+//        testString();
 
 
 
