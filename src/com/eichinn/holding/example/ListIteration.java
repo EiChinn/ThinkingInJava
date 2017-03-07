@@ -1,4 +1,4 @@
-package com.eichinn.holding.exercise;
+package com.eichinn.holding.example;
 
 import java.util.List;
 import java.util.ListIterator;

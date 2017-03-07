@@ -1,4 +1,4 @@
-package com.eichinn.holding.example;
+package com.eichinn.holding.exercise;
 
 import java.util.ArrayList;
 import java.util.Arrays;
