@@ -14,7 +14,7 @@ public class ShowMethods {
             + "To show all methods in class or:\n"
             + "ShowMethods qualified.class.name word\n"
             + "To search for method involving 'word'";
-    private static final Pattern p = Pattern.compile("\\w+\\.");
+    private static final Pattern p = Pattern.compile("\\w+\\.|static|final");
 
     public static void main(String[] args) {
         String[] vars = {"com.eichinn.typeinfo.example.ShowMethods"};
