@@ -1,4 +1,4 @@
-package com.eichinn.generics.exerice;
+package com.eichinn.generics.exercise;
 
 import com.eichinn.generics.example.Fibonacci;
 
