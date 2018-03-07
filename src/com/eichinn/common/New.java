@@ -39,5 +39,6 @@ public class New {
         LinkedList<String> lList = New.lLIst();
         Queue<String> qs = New.queue();
         f(New.map());
+        f(New.<Person, List<? extends Pet>>map());
     }
 }
