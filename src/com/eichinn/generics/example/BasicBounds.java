@@ -8,6 +8,7 @@ public class BasicBounds {
         solid.color();
         solid.getY();
         solid.getWeight();
+
     }
 }
 

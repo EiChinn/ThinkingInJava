@@ -1,25 +1,37 @@
 package com.eichinn.generics.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CovariantArrays {
     public static void main(String[] args) {
-        Fruit[] fruits = new Apple[10];
-        fruits[0] = new Apple();
-        fruits[1] = new Jonathan();
+        Fruit[] fruit = new Apple[10];
+        fruit[0] = new Apple();
+        fruit[1] = new Jonathan();
         //Runtime type is Apple[], not Fruit[] or Orange[]
         try {
             //Compiler allows you to add Fruit
-            fruits[0] = new Fruit();//ArrayStoreException
+            fruit[0] = new Fruit();//ArrayStoreException
         } catch (Exception e) {
             System.out.println(e);
         }
         try {
             //Compiler allow you tu add orange
-            fruits[1] = new Orange();//ArrayStoreException
+            fruit[1] = new Orange();//ArrayStoreException
         } catch (Exception e) {
             System.out.println(e);
         }
+
+        List<Fruit> x = new ArrayList<>();
+        test(x);
+    }
+
+    public static void test(List<? super Apple> x) {
+        x.add(new Apple());
     }
 }
+
+
 
 class Fruit {
 
