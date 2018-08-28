@@ -2,17 +2,22 @@
 package com.eichinn.typeinfo.example.pets;
 
 public class Individual implements Comparable<Individual> {
+
   private static long counter = 0;
   private final long id = counter++;
   private String name;
+
   public Individual(String name) { this.name = name; }
   // 'name' is optional:
   public Individual() {}
+
   public String toString() {
     return getClass().getSimpleName() +
       (name == null ? "" : " " + name);
   }
+
   public long id() { return id; }
+
   public boolean equals(Object o) {
     return o instanceof Individual &&
       id == ((Individual)o).id;
@@ -31,6 +36,7 @@ public class Individual implements Comparable<Individual> {
     int firstCompare = first.compareTo(argFirst);
     if(firstCompare != 0)
     return firstCompare;
+
     if(name != null && arg.name != null) {
       int secondCompare = name.compareTo(arg.name);
       if(secondCompare != 0)
